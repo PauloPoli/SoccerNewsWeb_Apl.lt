@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>AnglijosPremierLyga</title>
+<link rel="stylesheet" href="stilius.css" />
+</head>
+<center>
+<body>
+<button type="button" onclick="myFunction1()">PRADINIS</button>
+<button type="button" onclick="myFunction2()">FONAS#1</button>
+<button type="button" onclick="myFunction3()">FONAS#2</button>
+
+<script>
+function myFunction1() {
+    document.body.style.backgroundImage = 'url(ep.jpg)';
+}
+function myFunction2() {
+    document.body.style.backgroundImage = 'url(fonas.jpg)';
+}
+function myFunction3() {
+    document.body.style.backgroundImage = 'url(db.jpg)';
+}
+</script>
+	<div id="big_wrapper">
+		<header>
+						<h1>
+			<script>
+var message="ANGLIJOS PREMIER LYGA"
+var neonbasecolor="lightblue"
+var neontextcolor="green"
+var flashspeed=100  
+
+var n=0
+if (document.all||document.getElementById){
+document.write('<font color="'+neonbasecolor+'">')
+for (m=0;m<message.length;m++)
+document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+document.write('</font>')
+}
+else
+document.write(message)
+
+function crossref(number){
+var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+return crossobj
+}
+
+function neon(){
+
+//Raides keiciamos i base color
+if (n==0){
+for (m=0;m<message.length;m++)
+crossref(m).style.color=neonbasecolor
+}
+
+//Ratas ir pavienes raides keiciamos i neon color
+crossref(n).style.color=neontextcolor
+
+if (n<message.length-1)
+n++
+else{
+n=0
+clearInterval(flashing)
+setTimeout("beginneon()",1500)
+return
+}
+}
+
+function beginneon(){
+if (document.all||document.getElementById)
+flashing=setInterval("neon()",flashspeed)
+}
+beginneon()
+</script>
+</h1>
+		</header>		
+		<nav>
+			<img src="logo.png" width="180px" height = "75px" align="left">
+			<ul>
+				<a href="APL.html">Pradinis</a>
+				<a href="NAUJIENOS.html">Naujienos</a>
+				<a href="KOMANDOS.html">Komandos</a>
+				<a href="VIDEO.html">Video</a>
+			</ul>
+		</nav>	
+
+								<a href=""><img src="foto/asensio.jpg" width="300px" height="180px"></a>
+<p>Savo praeities &scaron;lovę bandanti atgauti &quot;Liverpool&quot; ekipa už talentingą ispaną ketina suploti įspūdingą sumą pinigų, tačiau trenerio Jurgeno Kloppo norai greičiausiai sudu&scaron; į &scaron;ipulius.</p>
+
+<p>&quot;Cadena Cope&quot; ir AS informuoja, kad &quot;raudonieji&quot; siūlo Madrido &quot;Real&quot; komandai net 50 mln. eurų už atakuojantį saugą Marco Asensio.</p>
+
+<p>21-erių ispanas sublizgėjo Čempionų lygos ketvirtfinalio serijoje prie&scaron; Miuncheno &quot;Bayern&quot; ir buvo vienas svarbiausių &quot;La Liga&quot; atstovų futbolininkų.</p>
+
+<p>Tiesa, &quot;Real&quot; treneris Zinedine&#39;as Zidane&#39;as turi savo nuomonę - jis Asensio vadina vienu i&scaron; ateities lyderių ir net neketina svarstyti kitų ekipų pasiūlymų.</p>
+
+<p>Praėjusią vasarą ispanas su Madrido klubu pasira&scaron;ė konktraktą iki 2022 metų vasaros.</p>
+
+<p>&Scaron;į sezoną M. Asensio per 29 susitikimus visuose turnyruose pelnė devynis įvarčius ir atliko tris rezultatyvius perdavimus.</p>								
+</body>
+</div>
+</center>
+</html>

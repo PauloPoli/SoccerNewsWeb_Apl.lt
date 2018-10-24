@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>AnglijosPremierLyga</title>
+<link rel="stylesheet" href="stilius.css" />
+</head>
+<center>
+<body>
+<button type="button" onclick="myFunction1()">PRADINIS</button>
+<button type="button" onclick="myFunction2()">FONAS#1</button>
+<button type="button" onclick="myFunction3()">FONAS#2</button>
+
+<script>
+function myFunction1() {
+    document.body.style.backgroundImage = 'url(ep.jpg)';
+}
+function myFunction2() {
+    document.body.style.backgroundImage = 'url(fonas.jpg)';
+}
+function myFunction3() {
+    document.body.style.backgroundImage = 'url(db.jpg)';
+}
+</script>
+	<div id="big_wrapper">
+		<header>
+						<h1>
+			<script>
+var message="ANGLIJOS PREMIER LYGA"
+var neonbasecolor="lightblue"
+var neontextcolor="green"
+var flashspeed=100  
+
+var n=0
+if (document.all||document.getElementById){
+document.write('<font color="'+neonbasecolor+'">')
+for (m=0;m<message.length;m++)
+document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+document.write('</font>')
+}
+else
+document.write(message)
+
+function crossref(number){
+var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+return crossobj
+}
+
+function neon(){
+
+//Raides keiciamos i base color
+if (n==0){
+for (m=0;m<message.length;m++)
+crossref(m).style.color=neonbasecolor
+}
+
+//Ratas ir pavienes raides keiciamos i neon color
+crossref(n).style.color=neontextcolor
+
+if (n<message.length-1)
+n++
+else{
+n=0
+clearInterval(flashing)
+setTimeout("beginneon()",1500)
+return
+}
+}
+
+function beginneon(){
+if (document.all||document.getElementById)
+flashing=setInterval("neon()",flashspeed)
+}
+beginneon()
+</script>
+</h1>
+		</header>		
+		<nav>
+			<img src="logo.png" width="180px" height = "75px" align="left">
+			<ul>
+				<a href="APL.html">Pradinis</a>
+				<a href="NAUJIENOS.html">Naujienos</a>
+				<a href="KOMANDOS.html">Komandos</a>
+				<a href="VIDEO.html">Video</a>
+			</ul>
+		</nav>	
+
+								<a href=""><img src="foto/mou.jpg" width="300px" height="180px"></a>
+<p>Manchester United treneris Jose Mourinho pripažįsta, kad komanda dabar yra sunkioje padėtyje, kai ketvirtadienį neteko dar dviejų svarbių startinės sudėties žaidėjų.</p>
+
+<p>UEFA Europos lygos rungtynėse, kuriose Man Utd triumfavo patekdamas į pusfinalį, Marcosas Rojo ir Zlatanas Ibrahimovičius patyrė sunkias kelio traumas. Neabejojama, kad 35-erių metų švedui šis sezonas jau tikrai yra baigtas.</p>
+
+<p>Man Utd ir be šių dviejų žaidėjų turėjo daugiau netekčių - Philas Jonesas ir Chrisas Smallingas negali rungtyniauti, o Juanas Mata iš rikiuotės greičiausiai iškritęs iki sezono pabaigos.</p>
+
+<p>Esame bėdoje, - pripažino J. Mourinho, kurio sekmadienį laukia Premier lygos rungtynės su Burnley.</p>
+
+<p>Ericas Bailly be poilsio sužaidė kelias rungtynes iš eilės, o lyg to būtų negana, mes dar netekome ir Rojo. Gynyboje neturime Smallingo ir Joneso. Jau iki šiol buvome didelėje bėdoje, bet prie netekčių prisidėjo ir Zlatanas.</p>
+
+<p>Puolime dar turime pasirinkimo. Wayneas Rooney jau yra pasiruošęs žengti į aikštę, taip pat sezono pabaigoje galime sulaukti sugrįžtančio Juano Matos, - pridūrė J. Mourinho.</p>
+
+<p>Penktoje vietoje esantis Man Utd&quot nuo ketvirtoje vietoje įsitaisiusio Man City atsilieka keturiais taškais.</p>
+								
+</body>
+</div>
+</center>
+</html>

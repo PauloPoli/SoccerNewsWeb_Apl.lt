@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>AnglijosPremierLyga</title>
+<link rel="stylesheet" href="stilius.css" />
+</head>
+<center>
+<body>
+
+<button type="button" onclick="myFunction1()">PRADINIS</button>
+<button type="button" onclick="myFunction2()">FONAS#1</button>
+<button type="button" onclick="myFunction3()">FONAS#2</button>
+
+<script>
+function myFunction1() {
+    document.body.style.backgroundImage = 'url(ep.jpg)';
+}
+function myFunction2() {
+    document.body.style.backgroundImage = 'url(fonas.jpg)';
+}
+function myFunction3() {
+    document.body.style.backgroundImage = 'url(db.jpg)';
+}
+</script>
+	<div id="big_wrapper">
+		<header>
+			<h1>
+			<script>
+var message="ANGLIJOS PREMIER LYGA"
+var neonbasecolor="lightblue"
+var neontextcolor="green"
+var flashspeed=100  
+
+var n=0
+if (document.all||document.getElementById){
+document.write('<font color="'+neonbasecolor+'">')
+for (m=0;m<message.length;m++)
+document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+document.write('</font>')
+}
+else
+document.write(message)
+
+function crossref(number){
+var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+return crossobj
+}
+
+function neon(){
+
+//Raides keiciamos i base color
+if (n==0){
+for (m=0;m<message.length;m++)
+crossref(m).style.color=neonbasecolor
+}
+
+//Ratas ir pavienes raides keiciamos i neon color
+crossref(n).style.color=neontextcolor
+
+if (n<message.length-1)
+n++
+else{
+n=0
+clearInterval(flashing)
+setTimeout("beginneon()",1500)
+return
+}
+}
+
+function beginneon(){
+if (document.all||document.getElementById)
+flashing=setInterval("neon()",flashspeed)
+}
+beginneon()
+</script>
+</h1>
+		</header>		
+		<nav>
+			<img src="logo.png" width="180px" height = "75px" align="left">
+			<ul>
+				<a href="APL.html">Pradinis</a>
+				<a href="NAUJIENOS.html">Naujienos</a>
+				<a href="KOMANDOS.html">Komandos</a>
+				<a href="VIDEO.html">Video</a>
+			</ul>
+		</nav>		
+<table>
+  <tr>
+	<th>Vieta</th>
+    <th>Komanda</th>
+    <th>Sužaista rungtynių</th>
+    <th>Taškai</th>
+  </tr>
+  <tr>
+	<td>1</td>
+    <td>CHELSEA</td>
+    <td>32</td>
+    <td>75</td>
+  </tr>
+  <tr>
+	<td>2</td>
+    <td>TOTTENHAM HOTSPUR</td>
+    <td>32</td>
+    <td>71</td>
+  </tr>
+  <tr>
+	<td>3</td>
+    <td>LIVERPOOL</td>
+    <td>33</td>
+    <td>66</td>
+  </tr>
+  <tr>
+	<td>4</td>
+    <td>MANCHESTER CITY</td>
+    <td>32</td>
+    <td>64</td>
+  </tr>
+  <tr>
+	<td>5</td>
+    <td>MANCHESTER UNITED</td>
+    <td>31</td>
+    <td>60</td>
+  </tr>
+  <tr>
+	<td>6</td>
+    <td>EVERTON</td>
+    <td>34</td>
+    <td>58</td>
+  </tr>
+  <tr>
+	<td>7</td>
+    <td>ARSENAL</td>
+    <td>31</td>
+    <td>57</td>
+  </tr>
+  <tr>
+	<td>8</td>
+    <td>WEST BROMWICH</td>
+    <td>33</td>
+    <td>44</td>
+  </tr>
+  <tr>
+	<td>9</td>
+    <td>SOUTHAMPTON</td>
+    <td>31</td>
+    <td>40</td>
+  </tr>
+  <tr>
+	<td>10</td>
+    <td>WATFORD</td>
+    <td>33</td>
+    <td>40</td>
+  </tr>
+  <tr>
+	<td>11</td>
+    <td>STOKE CITY</td>
+    <td>34</td>
+    <td>39</td>
+  </tr>
+  <tr>
+	<td>12</td>
+    <td>BOURNEMOUTH</td>
+    <td>34</td>
+    <td>38</td>
+  </tr>
+  <tr>
+	<td>13</td>
+    <td>WEST HAM UNITED</td>
+    <td>34</td>
+    <td>38</td>
+  </tr>
+  <tr>
+	<td>14</td>
+    <td>LEICESTER CITY</td>
+    <td>32</td>
+    <td>37</td>
+  </tr>
+  <tr>
+	<td>15</td>
+    <td>BURNLEY</td>
+    <td>33</td>
+    <td>36</td>
+  </tr>
+  <tr>
+	<td>16</td>
+    <td>CRYSTAL PALACE</td>
+    <td>32</td>
+    <td>35</td>
+  </tr>
+  <tr>
+	<td>17</td>
+    <td>HULL CITY</td>
+    <td>34</td>
+    <td>33</td>
+  </tr>
+  <tr>
+	<td>18</td>
+    <td>SWANSEA CITY</td>
+    <td>34</td>
+    <td>31</td>
+  </tr>
+  <tr>
+	<td>19</td>
+    <td>MIDDLESBROUGH</td>
+    <td>33</td>
+    <td>24</td>
+  </tr>
+  <tr>
+	<td>20</td>
+    <td>SUNDERLAND</td>
+    <td>32</td>
+    <td>21</td>
+  </tr>
+</table>		
+<canvas id="canvas" width="150" height="150"
+style="background-color:#333"; >
+</canvas>
+<script>
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 2;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+setInterval(drawClock, 1000);
+
+
+function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+  drawTime(ctx, radius);
+}
+
+function drawFace(ctx, radius) {
+  var grad;
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+  ctx.fillStyle = 'white';
+  ctx.fill();
+  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+  grad.addColorStop(0, '#333');
+  grad.addColorStop(0.5, 'white');
+  grad.addColorStop(1, '#333');
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = radius*0.1;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+  ctx.fillStyle = '#333';
+  ctx.fill();
+}
+
+function drawNumbers(ctx, radius) {
+  var ang;
+  var num;
+  ctx.font = radius*0.15 + "px arial";
+  ctx.textBaseline="middle";
+  ctx.textAlign="center";
+  for(num = 1; num < 13; num++){
+    ang = num * Math.PI / 6;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius*0.85);
+    ctx.rotate(-ang);
+    ctx.fillText(num.toString(), 0, 0);
+    ctx.rotate(ang);
+    ctx.translate(0, radius*0.85);
+    ctx.rotate(-ang);
+  }
+}
+
+function drawTime(ctx, radius){
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    //hour
+    hour=hour%12;
+    hour=(hour*Math.PI/6)+
+    (minute*Math.PI/(6*60))+
+    (second*Math.PI/(360*60));
+    drawHand(ctx, hour, radius*0.5, radius*0.07);
+    //minute
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+    drawHand(ctx, minute, radius*0.8, radius*0.07);
+    // second
+    second=(second*Math.PI/30);
+    drawHand(ctx, second, radius*0.9, radius*0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+</script>
+</body>
+</div>
+</center>
+</html>

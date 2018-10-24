@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>AnglijosPremierLyga</title>
+<link rel="stylesheet" href="stilius.css" />
+<link href="slide.html" />
+</head>
+<center>
+<body>
+<button type="button" onclick="myFunction1()">PRADINIS</button>
+<button type="button" onclick="myFunction2()">FONAS#1</button>
+<button type="button" onclick="myFunction3()">FONAS#2</button>
+
+<script>
+function myFunction1() {
+    document.body.style.backgroundImage = 'url(ep.jpg)';
+}
+function myFunction2() {
+    document.body.style.backgroundImage = 'url(fonas.jpg)';
+}
+function myFunction3() {
+    document.body.style.backgroundImage = 'url(db.jpg)';
+}
+</script>
+	<div id="big_wrapper">
+		<header>
+						<h1>
+			<script>
+var message="ANGLIJOS PREMIER LYGA"
+var neonbasecolor="lightblue"
+var neontextcolor="green"
+var flashspeed=100  
+
+var n=0
+if (document.all||document.getElementById){
+document.write('<font color="'+neonbasecolor+'">')
+for (m=0;m<message.length;m++)
+document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+document.write('</font>')
+}
+else
+document.write(message)
+
+function crossref(number){
+var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+return crossobj
+}
+
+function neon(){
+
+//Raides keiciamos i base color
+if (n==0){
+for (m=0;m<message.length;m++)
+crossref(m).style.color=neonbasecolor
+}
+
+//Ratas ir pavienes raides keiciamos i neon color
+crossref(n).style.color=neontextcolor
+
+if (n<message.length-1)
+n++
+else{
+n=0
+clearInterval(flashing)
+setTimeout("beginneon()",1500)
+return
+}
+}
+
+function beginneon(){
+if (document.all||document.getElementById)
+flashing=setInterval("neon()",flashspeed)
+}
+beginneon()
+</script>
+</h1>
+		</header>		
+		<nav>
+			<img src="logo.png" width="180px" height = "75px" align="left">
+			<ul>
+				<a href="APL.html">Pradinis</a>
+				<a href="NAUJIENOS.html">Naujienos</a>
+				<a href="KOMANDOS.html">Komandos</a>
+				<a href="VIDEO.html">Video</a>
+			</ul>
+		</nav>	
+
+								<a href="Na1.html"><img src="foto/mou.jpg" width="300px" height="180px"></a>
+								<a href="Na2.html"><img src="foto/city.jpg" width="300px" height="180px"></a>
+								<a href="Na3.html"><img src="foto/gvard.jpg" width="300px" height="180px"></a>
+								<a href="Na4.html"><img src="foto/asensio.jpg" width="300px" height="180px"></a>
+								<a href="Na5.html"><img src="foto/marq.jpg" width="300px" height="180px"></a>
+							
+</body>
+</div>
+</center>
+</html>
